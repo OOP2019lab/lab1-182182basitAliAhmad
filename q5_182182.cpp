@@ -15,8 +15,8 @@ void sort(int* ptr, int s)
 	{
 		for ( int j = 0; j < s - 1; j++)
 		{
-			if (ptr[j] > ptr[j+1])
-				swapint(ptr[j], ptr[j+1]);
+			if (*(ptr+j) > *(ptr+j+1))
+				swapint(*(ptr+j), *(ptr+j+1));
 		}
 	}
 }
